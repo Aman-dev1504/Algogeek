@@ -1,0 +1,19 @@
+.hero-container{
+    display: flex;
+    width: 1140px;
+    height: 600px;
+    border-radius: 48px;
+    background-color: var(--tertiary-color);
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+font-weight: 500;
+font-size: 3rem;
+}
+.h2-diff{
+    color:var(--primary-color);
+}

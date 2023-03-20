@@ -1,14 +1,91 @@
-.hero-container{
+.hero-section{
+    padding: 20px 0px;
+    margin: 0px 110px;
+}
+.hero-container-main{
     display: flex;
-    width: 1140px;
-    height: 600px;
+    width: 1320px;
+    height: 640px;
     border-radius: 48px;
     background-color: var(--tertiary-color);
-    max-width: 1200px;
-    padding: 0 15px;
-    margin: auto;
+    max-width: 1300px;
+    padding:100px;
+    /* margin: auto; */
     justify-content: center;
     align-items: center;
+    
+}
+.hero-btns{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    column-gap: 2.5rem;
+}
+.view-btn{
+    border: none;
+    cursor:pointer;
+    padding: 12px 20px;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: var(--quaternary-color);
+    font-size: 1rem;
+    font-weight: 400;
+    transition: 0.5s ease-out;
+}
+.play-btn{
+    cursor:pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid var(--secondary-color);
+    background-color: transparent;
+    color: black;
+    font-size: 1rem;
+    font-weight: 400;
+    transition: 0.5s ease-out;
+}
+.play-btn:hover{
+    background-color: var(--secondary-color);
+    color: var(--quaternary-color);
+    
+}
+.testmonial-container{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    position: relative;
+    margin: 20px 0px;
+}
+.testmonial-container p{
+    line-height: 50px;
+    margin-left: 120px;
+    color: #848484;
+}
+.user-img{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* margin: 0px 0px 20px 0px;     */
+    background-repeat: no-repeat;  
+}
+.user-img1{
+    background-position: center;
+    background-size: cover; background-image: url('https://img.freepik.com/free-photo/summer-lifestyle-fashion-portrait-young-stylish-hipster-woman-walking-street_1153-8615.jpg?w=1060&t=st=1679308739~exp=1679309339~hmac=d69eac96e7b57c7c7f3bb19d44f7f86485e5ee3d7f1dc7db960012949b3aa04f');
+}
+.user-img2{
+    left: 20px;
+    background-position: center;
+    background-size: cover; background-image: url('https://img.freepik.com/free-photo/smiling-happy-indian-student-with-backpack-pointing-his-finger-wall_496169-1532.jpg?w=1060&t=st=1679309449~exp=1679310049~hmac=1561e57ef2a33e844c52228dad60f6cd74ace1656e47a906a30a44759ee2ec23');
+}
+.user-img3{
+    left: 40px;
+    background-position: center;
+    background-size: cover; background-image: url('https://img.freepik.com/free-photo/young-bearded-student-guy-red-polo-shirt-with-backpack-holding-notebooks-lookign-happy-excited-clenching-fist-standing-white-wall_141793-101951.jpg?w=900&t=st=1679309364~exp=1679309964~hmac=e0bf73f8e5b91bf71b3d32b49ab39f14826f9d4468b0ebbc0e6fd3b6df7814f0');
+}
+.user-img4{
+    left: 60px;
+    background-position: center;
+    background-size: cover; background-image: url('https://img.freepik.com/premium-photo/pretty-indian-asian-young-college-girl-holding-books-bag-while-standing-isolated-white-background_466689-18256.jpg?w=740');
 }
 h2{
 font-weight: 500;
@@ -16,4 +93,86 @@ font-size: 3rem;
 }
 .h2-diff{
     color:var(--primary-color);
+}
+@media screen and (max-width: 768px){
+
+    .hero-section{
+        margin: 0px 20px;
+    }
+    .hero-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+        padding: 35px;
+        border-radius: 48px;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero-container-main{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+        padding: 35px;
+        border-radius: 48px;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero-content{
+        /* margin-right: 50px; */
+        align-items: center;
+        text-align: center;
+    }
+    .hero-btns{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 40px ;
+        column-gap: 2rem;
+   
+    }
+   .heroImg-wrapper img{
+    height: auto;
+    width: 100%;
+    
+
+   }
+   .testmonial-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    margin: 20px 0px;
+}
+.testmonial-container p{
+    line-height: 50px;
+    margin-left: 120px;
+    color: #848484;
+}
+.user-img{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* margin: 0px 0px 20px 0px;     */
+    background-repeat: no-repeat;  
+}
+.user-img1{
+    left: 70px;
+}
+.user-img2{
+    left: 90px;
+}
+.user-img3{
+    left: 110px;
+}
+.user-img4{
+    left: 130px;
+}
+    h2{
+        font-size: 2rem;
+    }
 }

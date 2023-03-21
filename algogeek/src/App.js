@@ -1,5 +1,5 @@
 import './App.css';
-import { Header,Hero } from './components';
+import { Header,Hero,Cards } from './components';
 import Aos from 'aos';
 import { useEffect } from 'react';
 function App() {
@@ -10,6 +10,7 @@ Aos.init();
     <>
      <Header />
      <Hero/>
+      <Cards/>
     </>
   );
 }

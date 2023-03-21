@@ -18,7 +18,7 @@
 .hero-btns{
     display: flex;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 20px;
     column-gap: 2.5rem;
 }
 .view-btn{

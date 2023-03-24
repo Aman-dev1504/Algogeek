@@ -15,6 +15,7 @@
     align-items: center;
     
 }
+
 .hero-btns{
     display: flex;
     align-items: center;
@@ -54,16 +55,17 @@
     /* align-items: center; */
     position: relative;
     margin: 20px 0px;
+    overflow: hidden;
 }
 .testmonial-container p{
     line-height: 50px;
-    margin-left: 120px;
+    margin-left: 110px;
     color: #848484;
 }
 .user-img{
     position: absolute;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     /* margin: 0px 0px 20px 0px;     */
     background-repeat: no-repeat;  

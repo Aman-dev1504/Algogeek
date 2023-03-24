@@ -1,20 +1,7 @@
 import React from "react";
 import "./Cards.css";
 import {card1,card2,card3} from "../assets";
-const cardItems = [
-    {
-        image:'/',
-        title: "Convenient Study Schedule",
-    },
-    {
-        image:'/',
-        title: "Live and Quick Support",
-    },
-    {
-        image:'/',
-        title: "Lectures By Industry Experts",
-    },
-];    
+ 
 const Cards = () => {
 return (
 <div className="cards-container">

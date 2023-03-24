@@ -1,6 +1,6 @@
-import React,{useRef,useEffect} from "react";
+import React,{useState} from "react";
 import logo from "../assets/logo.png";
-import {RiMenu3Line} from "react-icons/ri";
+import {RiMenu3Line,RiCloseLine } from "react-icons/ri";
 import "./Header.css";
 const navItems = [
 {
@@ -21,39 +21,30 @@ const navItems = [
 }
 ];
 const Header =() => {
-    // const headerRef = useRef(null);
-    // const handleScroll = () => {
-    //    if(document.body.scrollTop >80 ||document.documentElement.scrollTop >80 ){
-    //           headerRef.current.classList.add("sticky-menu");
-    //    }
-    //    else{
-    //           headerRef.current.classList.remove("sticky-menu");
-    //    }    
-    // }
+ 
+    
+    const [mobileMenuVisible, setMobileMenuVisible] = useState(false);
 
-    // useEffect(() => {
-    //   window.addEventListener("scroll", handleScroll);
-    
-    //   return () => {
-    //     window.removeEventListener("scroll", handleScroll);
-    //   }
-    // }, [])
-    
+  const toggleMobileMenu = () => {
+    setMobileMenuVisible(!mobileMenuVisible);
+  };
 
 
 
     return (
         <header className="header" >
         <div className="container">
-            <div className="navWrapper">
+            <div className="navWrapper ">
                 
             <div className="logo">
                 <img src={logo} alt="Logo"/>
                 <a href="/" className="logo-text">Algogeek</a>
             </div>
             {/* Nav menu section */}
-            <div className="navigation">
-            <ul className="menu">
+            <div className={`navigation ${
+              mobileMenuVisible ? "mobile-menu-visible" : ""
+            }`} >
+            <ul className="menu ">
                 {
                 navItems.map(items =>(
                     <li className="nav-items"><a href={items.path}>{items.name}</a></li>
@@ -64,7 +55,7 @@ const Header =() => {
             {/* Nav Button section */}
             <div className="nav-btn">
                 <button className="main-btn">Register</button>
-                <span className="mobile-view"><RiMenu3Line/></span>
+                <span className="mobile-view" onClick={toggleMobileMenu}> {mobileMenuVisible ? <RiCloseLine /> : <RiMenu3Line />}</span>
             </div>
             
             </div>    
